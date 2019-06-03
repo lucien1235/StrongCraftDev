@@ -103,6 +103,7 @@ module.exports.run = async (bot, message, args) => {
         .setThumbnail(sicon)
         .setDescription(":mega: StrongCraft Moderation Commands :mega:")
         .addField("``" + prefix + "setActivity <game>``", "Chance the bots status.")
+        .addField("``" + prefix + "setStatus <status>``", "Change the status of the bot.")
         .addField("``" + prefix + "reload``", "Reload the bot.")
         .addField("``" + prefix + "stats``", "View the bot stats.")
         .addField("``" + prefix + "giveaway <time> <reward>``", "Starts a giveaway.");
