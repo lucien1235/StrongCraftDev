@@ -8,6 +8,8 @@ message.delete();
 let status = args.join(' ')
 if(message.author.id !== "315577349192286228") return message.channel.send("You do not have permission!");
 
+if(!args[0]) return message.channel.send("The game status is removed.").then(msg => {msg.delete(3000)});;
+
 bot.user.setActivity(status)
 
     const setGameEmbed = new Discord.RichEmbed()
