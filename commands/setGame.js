@@ -10,7 +10,7 @@ if(message.author.id !== "315577349192286228") return message.channel.send("You 
 
 if(!args[0]) {
     bot.user.setActivity("");
-    return message.channel.send("The game status will be removed in 1 minute.").then(msg => {msg.delete(8000)});;
+    return message.channel.send("The game status will be removed.").then(msg => {msg.delete(8000)});;
 }
 
 bot.user.setActivity(status)
