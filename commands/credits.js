@@ -1,6 +1,6 @@
 const { RichEmbed } = require("discord.js");
 
-exports.run = (bot, message) => {
+module.exports.run = (bot, message) => {
   if (!message.guild.member(bot.user).hasPermission('SEND_MESSAGES')) return;
         
         const user = message.author;
@@ -21,7 +21,7 @@ exports.run = (bot, message) => {
             message.channel.send(credits);
 }
 
-exports.help = {
+module.exports.help = {
     name: "credits",
     aliases: ["credit"],
 }
