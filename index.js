@@ -15,7 +15,7 @@ fs.readdir(`./Events/`, (err, files) => {
         if (!file.endsWith(`.js`)) return;
         const evt = require(`./Events/${file}`);
         let evtName = file.split(`.`)[0];
-        console.log(`Event Loaded ${evtName}.`);
+        console.log(`${evtName}.js loaded`);
         bot.on(evtName, evt.bind(null, bot));
     });
 });
