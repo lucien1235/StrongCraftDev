@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
         let SuggestEmbed = new Discord.RichEmbed()
         .setColor(yellow)
-        .setDescription("**Suggestion:**", suggestion)
+        .addField("**Suggestion:**", suggestion)
         .setTimestamp()
         .setFooter(message.author.tag, message.author.avatarURL);
 
