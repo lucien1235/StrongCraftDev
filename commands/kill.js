@@ -22,7 +22,7 @@ exports.run = async (bot, message) => {
 
     const kill = [
         `:bomb: You managed to blow yourself up and ${killmention} with your own bomb in your car!`,
-        `:bomb: You blew up ${killmention}!`
+        `:bomb: You blew up ${killmention}!`,
         `:knife: ${killmention} was doing self defense and turning the blade against you! Pity...`,
         `:gun: ${killmention} was also hired killer and fired faster than you! Pity...`,
         `:gun: You managed to kill ${killmention} at about ${distance1}!`,
