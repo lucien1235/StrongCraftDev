@@ -1,6 +1,6 @@
 const {RichEmbed} = require("discord.js");
 
-exports.run = (bot, message) => {
+module.exports.run = (bot, message) => {
     message.delete();
     if (!message.guild.member(bot.user).hasPermission('SEND_MESSAGES')) return;
 
@@ -40,7 +40,7 @@ exports.run = (bot, message) => {
     message.channel.send(CookEmbed)
 }
 
-exports.help = {
+module.exports.help = {
     name: "cook",
     aliases: [""],
 }
