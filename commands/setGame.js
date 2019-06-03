@@ -10,11 +10,10 @@ if(message.author.id !== "315577349192286228") return message.channel.send("You 
 
 bot.user.setActivity(status)
 
-    const setGameEmbed = new RichEmbed()
+    const setGameEmbed = new Discord.RichEmbed()
         .setColor('#68f442')
-        .setTitle("Change of game status")
-        .setDescription(`New status: ${status}`)
-        .setTimestamp();
+        .setTitle("***Change of game status:***")
+        .setDescription(`${status}`)
 
     message.channel.send(setGameEmbed).then(msg => {msg.delete(8000)});;
 }
