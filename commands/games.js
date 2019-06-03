@@ -44,6 +44,7 @@ module.exports.run = async (bot, message, args) => {
         .addField(prefix + "woof", "Get some dog pictures.")
         .addField(prefix + "meow", "Get some cat pictures.")
         .addField(prefix + "meme", "Get some meme pictures.")
+        .addField(prefix + "cook", "What are we going to eat today?")
         .setTimestamp()
         .setFooter(`${message.author.username}`);
 
