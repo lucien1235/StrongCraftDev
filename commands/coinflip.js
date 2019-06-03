@@ -1,16 +1,25 @@
 const Discord = require("discord.js");
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (bot, message) => {
 
-            if (Math.random() < 0.5) {
-              message.reply(':money_with_wings: Your coin landed on **Heads**! :money_with_wings:')
-            } else {
-              message.reply(':money_with_wings: Your coin landed on **Tails**! :money_with_wings:')
-            }
+      message.delete();
+
+      let replies = [
+        "Heads",
+        "Tails",
+      ]
     
-        } 
+      let result = Math.floor((Math.random() * replies.length))
+
+      let CoinFlipEmbed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .setDescription(`:money_with_wings: Your coin landed on **${replies[result]}**! :money_with_wings:`)
+      .setFooter(`${message.author.username} has thrown a coin!`);
+            
+      message.channel.send(CoinFlipEmbed);     
+  } 
 
 module.exports.help = {
     name: "coinflip",
-    aliases: ["flip", "coin"],
+    aliases: ["flip", "coin", "cf"],
 }
