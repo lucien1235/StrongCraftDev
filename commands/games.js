@@ -34,6 +34,7 @@ module.exports.run = async (bot, message, args) => {
         .addField(prefix + "lmgtfy", `Creates a lmgtfy link.\nUsage: **${prefix}lmgtfy <message>**`)
         .addField(prefix + "emote", `Gives you an emote picture.\nUsage: **${prefix}emote <emoji>**`)
         .addField(prefix + "fancy", `Make a fancy message.\nUsage: **${prefix}fancy <message>**`)
+        .addField(prefix + "kill", `Kill a certain user.\nUsage: **${prefix}kill <@user>**`)
         .addField(prefix + "lies", "Let the bot decide that he/she speaks the truth.")
         .addField(prefix + "capitals", "Guess the Capitals.")
         .addField(prefix + "advice", "Get some advice from the bot!")
