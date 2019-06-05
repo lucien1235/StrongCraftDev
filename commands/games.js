@@ -22,6 +22,8 @@ module.exports.run = async (bot, message, args) => {
         .setDescription("A list with different game commands.")
         .addField(prefix + "skin", `Get the minecraft skin of a certain player.\nUsage: **${prefix}skin <minecraft username>**`)
         .addField(prefix + "triggered", `Get an triggered picture of a certain player.\nUsage: **${prefix}trigger <@user>**`)
+        .addField(prefix + "approved", `Get an approved picture of a certain player.\nUsage: **${prefix}approved <@user>**`)
+        .addField(prefix + "wanted", `Get an wanted picture of a certain player.\nUsage: **${prefix}wanted <@user>**`)
         .addField(prefix + "8ball", `Ask questions and get answers on the questions.\nUsage: **${prefix}8ball <question>**`)
         .addField(prefix + "qrc", `Provide some text to generate that in a QR code.\n*Usage:* ***${prefix}qrc <text>***`)
         .addField(prefix + "avatar", `Get you're or someone's avatar.\nUsage: **${prefix}avatar <@user>**`)
