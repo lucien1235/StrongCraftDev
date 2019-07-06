@@ -14,8 +14,6 @@
     "asciify": "^1.3.5",
     "async": "~2.6.1",
     "canvas": "^2.5.0",
-    "canvas-constructor": "^3.0.1",
-    "canvas-prebuilt": "latest",
     "colornamer": "^1.0.9",
     "commander": "^2.19.0",
     "common-tags": "^1.8.0",
